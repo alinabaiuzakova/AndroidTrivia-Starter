@@ -34,6 +34,11 @@ class MainActivity : AppCompatActivity() {
 
 
     }
+    override fun onSupportNavigateUp(): Boolean {
+        val navController = this.findNavController(R.id.myNavHostFragment)
+        return navController.navigateUp()
+    }
+
 
     // TODO (01) Create the new TitleFragment
     // Select File->New->Fragment->Fragment (Blank)
